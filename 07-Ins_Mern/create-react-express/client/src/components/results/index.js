@@ -10,7 +10,7 @@ const results = (props) => {
         <div>{props.image}</div>
         <p>{props.description}</p>
            <button>View</button>
-           <button>Save</button>
+           <button onClick={(event)=>this.props.handleSave(event)}>Save</button>
         </div>
     );
 }

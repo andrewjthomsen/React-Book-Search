@@ -8,7 +8,7 @@ const search = (props) => {
             <h3>Book Search</h3>
             <h5>Book</h5>
             <form><input type='text' className="search"></input></form>
-            <button type="submit">Search</button>
+            <button onClick={props.handleFormSubmit()} type="submit">Search</button>
         </div>
     );
 }
