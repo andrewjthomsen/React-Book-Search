@@ -24,7 +24,7 @@ app.get("/api/books", (req, res) => {
 });
 
 app.post("/api/books", (req, res) => {
-  db.Book.insert();
+  db.Book.insert({});
 });
 
 app.delete("/api/books/:id", (req, res) => {
