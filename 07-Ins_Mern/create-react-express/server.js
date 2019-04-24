@@ -17,6 +17,19 @@ if (process.env.NODE_ENV === "production") {
 mongoose.connect('mongodb://localhost/googlebooks')
 
 // Define API routes here
+app.get("/api/books", (req, res) => {
+  db.Book.find().then((books) => {
+    res.json(books);
+  })
+});
+
+app.post("/api/books", (req, res) => {
+  db.Book.insert();
+});
+
+app.delete("/api/books/:id", (req, res) => {
+  db.Book.remove({'_id': req.params.id});
+});
 
 // Send every other request to the React app
 // Define any API routes before this runs
