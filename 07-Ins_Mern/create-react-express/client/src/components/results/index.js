@@ -14,5 +14,6 @@ const results = (props) => {
         </div>
     );
 }
-
+// Need to create a clickhandler for save to make an ajax request to save current clicked book
+// Inside render need to use .map to render out each searched book
 export default results;
