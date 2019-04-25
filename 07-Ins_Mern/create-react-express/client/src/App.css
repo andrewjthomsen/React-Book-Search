@@ -1,4 +1,41 @@
-.App {
+/* Layout Goals
+1. banner to display
+2. seperate search/save links
+3. Try to format similarly to layout given
+4.
+5. */
+.jumbotron {
+text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -21,4 +58,4 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */
