@@ -1,6 +1,6 @@
 import React from "react";
 import SearchBook from "../../components/search/index";
-import ResultsContainer from "../../components/results/ResultsContainer";
+import ResultsContainer from "../../components/results/resultsContainer";
 import API from "../../utils/API";
 class Search extends React.Component {
   constructor(props) {
