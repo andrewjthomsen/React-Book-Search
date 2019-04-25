@@ -1,16 +1,18 @@
-// stateless
-//define function that returns jsx and returns parameters (props)
-import * as React from "react"
+import React from "react"
 // stateless functional component that returns html (jsx)
-const searchBook = (props) => {
+function searchBook(props) {
     return (
-        <div className="search">
+        <div id="searchContainer">
             <h3>Book Search</h3>
-            <h5>Book</h5>
-            <form><input type='text' className="search"></input></form>
-            <button onClick={props.handleFormSubmit} className="submit" type="submit">Search</button>
+            <form id="bookSearch">
+                <label htmlFor="bookInput" form="bookSearch">Enter a book to search:</label>
+                <br></br>
+                <input type="text" name="bookInput" id="bookInput" form="bookSearch" placeholder="Book Title" required/> 
+                {/* onChange={(e) => props.handleChange(e)} */}
+                <br></br>
+                <button type="submit" onClick={(e) => props.handleSearchClick(e)}>Search</button>
+            </form>
         </div>
     );
 }
-
 export default searchBook;
