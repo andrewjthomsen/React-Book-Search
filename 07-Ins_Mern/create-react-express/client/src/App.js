@@ -3,14 +3,15 @@ import "./App.css";
 import NavBar from "./components/nav/index";
 import SearchPage from "./pages/search/search";
 import SavedPage from "./pages/saved/saved";
+import Title from "./components/title/index";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 class App extends Component {
-  constructor(props) {
-    super();
-    this.state = {
-      currentPage: 'search'
-    }
-  }
+  // constructor(props) {
+  //   super();
+  //   this.state = {
+  //     currentPage: 'search'
+  //   }
+  // }
 
   render() {
     // <Route path="" component = {home}/>
@@ -20,6 +21,7 @@ class App extends Component {
           <div className="navBar">
             <NavBar />
           </div>
+          <Title/>
           <Switch>
             <Route exact path="/" component={SearchPage} />
             <Route exact path="/search" component={SearchPage} />
