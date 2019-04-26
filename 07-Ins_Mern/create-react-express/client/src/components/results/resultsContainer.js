@@ -5,14 +5,14 @@ function ResultsContainer(props) {
         return(
             <div id="resultsContainer">
                 <h3>Results Found</h3>
-                {props.bookData.map((book) => {
+                {props.bookData.map((book) => {//iterrating through book data. for each element in array, render a result
                     const bookInfo = book.volumeInfo;
                     return <BookResult
                     title={bookInfo.title}
                     authors={bookInfo.authors}
                     description={bookInfo.description}
                     link={bookInfo.canonicalVolumeLink}
-                    image={bookInfo.imageLinks}
+                    img={bookInfo.imageLinks}
                     path={props.path}
                     key={book.id}/>
                 })}

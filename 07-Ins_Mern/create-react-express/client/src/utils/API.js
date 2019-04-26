@@ -6,7 +6,7 @@ export default {
    },
    searchBooks: (title) => {
        console.log("This: " + title);
-       return axios.post("https://www.googleapis.com/books/v1/volumes?q=" + title);
+       return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + title);
     //    console.log("This: " + title);
     //    return axios.post("/search", {title: title});
    },
