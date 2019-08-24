@@ -5,7 +5,7 @@ import * as React from "react"
 const Title = (props) => {
     return (
         <div className="title">
-            <h1>(React) Google Books Search</h1>
+            <h1>Google Book Search</h1>
             <h2>Search for and Saved Books of Interest</h2>
         </div>
     );

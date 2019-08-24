@@ -3,8 +3,7 @@ const path = require("path");
 const mongoose = require('mongoose');
 const PORT = process.env.PORT || 3001;
 const app = express();
-
-var db = require('./models');
+const modelsS = require('./models');
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -16,6 +15,10 @@ if (process.env.NODE_ENV === "production") {
 
 mongoose.connect('mongodb://localhost/googlebooks')
 
+const db = mongoose.connection;
+
+
+console.log({ book: db.Book })
 // Define API routes here
 app.get("/api/books", (req, res) => {
   db.Book.find().then((books) => {

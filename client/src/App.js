@@ -18,7 +18,7 @@ class App extends Component {
     // <Route path="" component = {home}/>
     return (
       <Router>
-        <div className="wrapper">
+        <div className="wrapper container">
           <div className="navBar">
             <NavBar />
           </div>

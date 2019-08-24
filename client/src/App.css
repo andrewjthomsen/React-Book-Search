@@ -4,15 +4,20 @@
 3. Try to format similarly to layout given
 4.
 5. */
+.wrapper {
+ 
+  background-image: url("https://www.ilovewallpaper.co.uk/images/muriva-fashion-library-wallpaper-silver-139502-p3071-7051_image.jpg")
+}
 .jumbotron {
 text-align: center;
 
 }
 
-
-
-
-
+.navbar {
+  color: white;
+  font: bold;
+  font-family: 'Playfair Display', serif;
+}
 
 
 

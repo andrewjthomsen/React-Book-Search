@@ -8,7 +8,7 @@ const navBar = (props) => {
     return (
         //    <route><Route path="home" component = {home}/></route>
         <Navbar>
-            <h1>Google Books</h1>
+            <h1>Google Books </h1>
             <Link to="/">Search</Link>
             <Link to="/saved">Saved</Link>
         </Navbar>

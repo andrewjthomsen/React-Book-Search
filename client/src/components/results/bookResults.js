@@ -23,6 +23,7 @@ class BookResult extends React.Component {
             img: this.props.img,
             description: this.props.description
         }
+        console.log({bookData});
         e.preventDefault();
         API.saveBook(bookData).then(
             (response) => {
